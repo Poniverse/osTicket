@@ -76,7 +76,11 @@ textarea {
     *vertical-align: middle;
 }
 
-input {
+input:not([type]),
+input[type=text], input[type=password], input[type=email],
+input[type=url], input[type=time], input[type=date],
+input[type=datetime], input[type=datetime-local], input[type=tel],
+input[type=number], input[type=search]{
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #9e9e9e;
@@ -304,7 +308,7 @@ h2, .subject {
     border-radius: 20px;
     display: inline-block;
     height: 36px;
-    line-height: 36px;
+    line-height: 30px;
     padding: 0 2rem;
     text-transform: uppercase;
     vertical-align: middle;
@@ -317,6 +321,10 @@ h2, .subject {
     color: white;
     transition: .2s ease-out;
     border: 3px solid white;
+}
+
+.sidebar .button {
+    line-height: 36px;
 }
 
 .button:hover {
