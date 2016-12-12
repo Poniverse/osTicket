@@ -117,9 +117,7 @@ a, .link {
   margin-bottom: 1px;
 }
 a:hover, .link:hover {
-    border-bottom: 1px dotted #0072bc;
-    margin-bottom: 0;
-    cursor: pointer;
+  cursor: pointer;
 }
 h1 {
   color: #00AEEF;
@@ -406,13 +404,8 @@ body {
 }
 #footer #poweredBy {
   display: block;
-  width: 126px;
-  height: 23px;
   outline: none;
-  text-indent: -9999px;
-  margin: 0 auto;
-  background: url('../images/poweredby.png') top left no-repeat;
-  background-size: auto 20px;
+  margin: 5px auto;
 }
 .front-page-button {
 }
