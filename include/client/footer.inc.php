@@ -23,5 +23,6 @@ if (($lang = Internationalization::getCurrentLanguage()) && $lang != 'en_US') { 
 </script>
 <script type="text/javascript" src="//use.typekit.net/gbr7ubq.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script src="https://use.fontawesome.com/ee5e33857b.js"></script>
 </body>
 </html>

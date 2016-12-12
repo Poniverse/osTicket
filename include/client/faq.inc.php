@@ -43,7 +43,7 @@ $category=$faq->getCategory();
 <?php foreach ($attachments as $att) { ?>
     <div>
     <a href="<?php echo $att->file->getDownloadUrl(); ?>" class="no-pjax">
-        <i class="icon-file"></i>
+        <i class="fa fa-file-o" aria-hidden="true"></i>
         <?php echo Format::htmlchars($att->getFilename()); ?>
     </a>
     </div>

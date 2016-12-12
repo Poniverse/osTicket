@@ -13,7 +13,7 @@
         <ul id="kb">
 <?php
         foreach ($categories as $C) { ?>
-            <li><i></i>
+            <li><i class="fa fa-folder-open" aria-hidden="true"></i>
             <div style="margin-left:45px">
             <h4><?php echo sprintf('<a href="faq.php?cid=%d">%s (%d)</a>',
                 $C->getId(), Format::htmlchars($C->getLocalName()), $C->faq_count); ?></h4>
@@ -23,7 +23,7 @@
 <?php       foreach ($C->faqs
                     ->exclude(array('ispublished'=>FAQ::VISIBILITY_PRIVATE))
                     ->limit(5) as $F) { ?>
-                <div class="popular-faq"><i class="icon-file-alt"></i>
+                <div class="popular-faq"><i class="fa fa-file-o" aria-hidden="true"></i>
                 <a href="faq.php?id=<?php echo $F->getId(); ?>">
                 <?php echo $F->getLocalQuestion() ?: $F->getQuestion(); ?>
                 </a></div>

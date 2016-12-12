@@ -28,7 +28,7 @@ if ($faqs->exists(true)) {
 foreach ($faqs as $F) {
         $attachments=$F->has_attachments?'<span class="Icon file"></span>':'';
         echo sprintf('
-            <li><a href="faq.php?id=%d" >%s &nbsp;%s</a></li>',
+            <li><a href="faq.php?id=%d" ><i class="fa fa-file-o" aria-hidden="true"></i>%s &nbsp;%s</a></li>',
             $F->getId(),Format::htmlchars($F->question), $attachments);
     }
     echo '  </ol>

@@ -545,14 +545,16 @@ body {
 
 #faq ol li a {
     display: block;
-    padding: 5px 0;
+    padding: 5px;
     height: auto !important;
     overflow: hidden;
     margin: 0;
     border-bottom: 1px solid #ddd;
     line-height: 16px;
-    padding-left: 24px;
-    background: url('../images/icons/page.png') 0 50% no-repeat;
+}
+
+#faq ol li a i {
+    margin-right: 6px;
 }
 
 #faq ol li a:hover {
@@ -592,9 +594,9 @@ body {
     display: block;
     width: 32px;
     height: 32px;
+    font-size: 32px;
     float: left;
     margin-right: 6px;
-    background: url(../images/kb_large_folder.png) top left no-repeat;
 }
 
 .featured-category {
@@ -1161,6 +1163,11 @@ img.sign-in-image {
     display: inline-block;
     width: calc(100% - 160px);
     padding: 5px 10px;
+}
+
+.sidebar .searchbar .search {
+    font-size: 14px;
+    text-align: center;
 }
 
 .searchbar .search {
