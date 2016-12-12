@@ -21,17 +21,17 @@ $section = 'home';
 require(CLIENTINC_DIR.'header.inc.php');
 ?>
 <div id="landing_page">
+<div class="search-form">
+    <form method="get" action="kb/faq.php">
+        <input type="hidden" name="a" value="search"/>
+        <input type="text" name="q" class="search" placeholder="<?php echo __('Search our knowledge base'); ?>"/>
+        <button type="submit" class="green button search-button"><?php echo __('Search'); ?></button>
+    </form>
+</div>
 <?php include CLIENTINC_DIR.'templates/sidebar.tmpl.php'; ?>
 <div class="main-content">
 <?php
 if ($cfg && $cfg->isKnowledgebaseEnabled()) { ?>
-<div class="search-form">
-    <form method="get" action="kb/faq.php">
-    <input type="hidden" name="a" value="search"/>
-    <input type="text" name="q" class="search" placeholder="<?php echo __('Search our knowledge base'); ?>"/>
-    <button type="submit" class="green button search-button"><?php echo __('Search'); ?></button>
-    </form>
-</div>
     <div class="thread-body">
 <?php
 }
