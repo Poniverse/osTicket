@@ -833,8 +833,6 @@ label.required, span.required {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
-    background: url('../images/lock.png?1319655200') 95% 50% no-repeat #f6f6f6;
 }
 
 .rtl #clientLogin {
@@ -1116,12 +1114,7 @@ img.sign-in-image {
 .login-box {
     width: 40%;
     display: table-cell;
-    box-shadow: 12px 0 15px -15px rgba(0, 0, 0, 0.4);
     padding: 15px;
-}
-
-.rtl .login-box {
-    box-shadow: -12px 0 15px -15px rgba(0, 0, 0, 0.4);
 }
 
 .flush-right {
