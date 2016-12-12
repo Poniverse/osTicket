@@ -21,5 +21,7 @@ if (($lang = Internationalization::getCurrentLanguage()) && $lang != 'en_US') { 
         print $api->client(false);
     ?>);
 </script>
+<script type="text/javascript" src="//use.typekit.net/gbr7ubq.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </body>
 </html>

@@ -1,0 +1,86 @@
+body {
+    background: white;
+}
+
+#container {
+    background: transparent;
+    box-shadow: initial;
+}
+
+#header {
+    padding: 15px;
+    background: #38dbe8;
+    color: white;
+    min-height: 70px;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+#header #container {
+    height: 100%;
+}
+
+#header #logo {
+    width: 60px;
+    height: 40px;
+}
+
+#poni-subheading h1 {
+    font-family: "proxima-nova-soft", "proxima-nova", Arial;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    color: white;
+    margin: 35px 0;
+    margin-left: 10px;
+}
+
+#header ul {
+    list-style: none;
+    float: right;
+    color: white;
+    margin: 0;
+}
+
+#header ul li {
+    display: inline-block;
+    float: right;
+    margin: 0;
+}
+
+#header ul span, #header ul a {
+    color: inherit;
+    display: inline-block;
+    padding: 0 16px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+#header .poni-button {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: #becfcf;
+    transition: background-color 300ms ease,border-color 300ms ease;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    outline: none !important;
+}
+
+#header .poni-sign-in {
+    text-transform: lowercase;
+    background: white;
+    border: 3px solid white;
+    color: #38dbe8;
+    font-weight: 600;
+    font-size: inherit;
+    line-height: 25px;
+    padding: 4px 10px;
+}
+
+#header .poni-sign-in:hover {
+    background: none;
+    color: white;
+}
