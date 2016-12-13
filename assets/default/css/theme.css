@@ -278,9 +278,9 @@ h2, .subject {
     margin: 0;
     padding: 5px;
     margin-bottom: 10px;
-    color: #3a87ad;
-    border: 1px solid #bce8f1;
-    background-color: #d9edf7;
+    color: #356b6f;
+    border: 1px solid #94d1d6;
+    background-color: #d3fcff;
 }
 
 .warning {
@@ -1288,6 +1288,11 @@ img.avatar {
     border-radius: 5px 5px 0 0;
 }
 
+.thread-entry .header .faded {
+    color: black;
+    opacity: 0.8;
+}
+
 .thread-entry.avatar .header:before {
     position: absolute;
     top: 7px;
@@ -1295,7 +1300,18 @@ img.avatar {
     content: '';
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
-    border-left: 8px solid #b0b0b0;
+    border-left: 8px solid #aaa;
+    display: inline-block;
+}
+
+.thread-entry.avatar.response .header:before {
+    position: absolute;
+    top: 7px;
+    right: -8px;
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #aaa;
     display: inline-block;
 }
 
@@ -1315,16 +1331,16 @@ img.avatar {
 }
 
 .thread-entry.response .header {
-    background: #dddddd;
+    background: #d3fcff;
 }
 
 .thread-entry.avatar.response .header:after {
-    border-left: 7px solid #dddddd;
+    border-left: 7px solid #d3fcff;
     margin-right: 1px;
 }
 
 .thread-entry.message .header {
-    background: #C3D9FF;
+    background: #e0e0e0;
 }
 
 .thread-entry.avatar.message .header:before {
@@ -1332,11 +1348,11 @@ img.avatar {
     left: -8px;
     right: initial;
     border-left: none;
-    border-right: 8px solid #CCC;
+    border-right: 8px solid #e0e0e0;
 }
 
 .thread-entry.avatar.message .header:before {
-    border-right-color: #9cadcc;
+    border-right-color: #e0e0e0;
 }
 
 .thread-entry.avatar.message .header:after {
@@ -1344,7 +1360,7 @@ img.avatar {
     left: -8px;
     right: initial;
     border-left: none;
-    border-right: 7px solid #c3d9ff;
+    border-right: 7px solid #e0e0e0;
     margin-left: 1px;
 }
 
@@ -1358,7 +1374,6 @@ img.avatar {
 .thread-entry .thread-body {
     border: 1px solid #ddd;
     border-top: none;
-    border-bottom: 2px solid #aaa;
     border-radius: 0 0 5px 5px;
 }
 

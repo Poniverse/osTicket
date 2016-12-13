@@ -24,6 +24,11 @@ if ($cfg->isAvatarsEnabled() && $user)
         <?php } ?>
             </span>
         </div>
+        <?php
+        if ($entry->type == 'R') {
+            ?><img class="inline-pv-logo" src="<?php echo ROOT_PATH; ?>images/poniverse-small-black.svg"><?php
+        }
+        ?>
 <?php
             echo sprintf(__('<b>%s</b> posted %s'), $name,
                 sprintf('<time datetime="%s" title="%s">%s</time>',

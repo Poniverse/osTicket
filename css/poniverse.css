@@ -84,3 +84,10 @@ body {
     background: none;
     color: white;
 }
+
+.inline-pv-logo {
+    height: 12px;
+    width: 18px;
+    margin-bottom: 2px;
+    margin-right: 6px;
+}
