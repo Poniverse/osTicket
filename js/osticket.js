@@ -25,7 +25,7 @@ $(document).ready(function(){
         var fObj = $(this).closest('form');
         if(!fObj.data('changed')){
             fObj.data('changed', true);
-            $('input[type=submit]', fObj).addClass('red');
+            //$('input[type=submit]', fObj).addClass('red');
             $(window).bind('beforeunload', function(e) {
                 return __("Are you sure you want to leave? Any changes or info you've entered will be discarded!");
              });
@@ -35,7 +35,7 @@ $(document).ready(function(){
     $("form :input[type=reset]").click(function() {
         var fObj = $(this).closest('form');
         if(fObj.data('changed')){
-            $('input[type=submit]', fObj).removeClass('red');
+            //$('input[type=submit]', fObj).removeClass('red');
             $('label', fObj).removeAttr('style');
             $('label', fObj).removeClass('strike');
             fObj.data('changed', false);
