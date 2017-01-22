@@ -138,9 +138,13 @@ if (!$nav) {
 }
 
 // Browsers shouldn't suggest saving that username/password
-Http::response(422);
+/*Http::response(422);
 
 require CLIENTINC_DIR.'header.inc.php';
 require CLIENTINC_DIR.$inc;
-require CLIENTINC_DIR.'footer.inc.php';
+require CLIENTINC_DIR.'footer.inc.php';*/
+
+// Redirect to poni auth
+$bk = UserAuthenticationBackend::getBackend('poniverse.client')
+$bk->triggerAuth();
 ?>
