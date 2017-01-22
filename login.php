@@ -145,6 +145,6 @@ require CLIENTINC_DIR.$inc;
 require CLIENTINC_DIR.'footer.inc.php';*/
 
 // Redirect to poni auth
-$bk = UserAuthenticationBackend::getBackend('poniverse.client')
+$bk = UserAuthenticationBackend::getBackend('poniverse.client');
 $bk->triggerAuth();
 ?>
