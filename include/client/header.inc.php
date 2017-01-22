@@ -86,11 +86,11 @@ if ($lang) {
                     <?php
                     if ($thisclient && is_object($thisclient) && $thisclient->isValid()
                         && !$thisclient->isGuest()) {
-                        echo Format::htmlchars($thisclient->getName()).'&nbsp;|';
-                        ?>
-                        <li><a href="<?php echo ROOT_PATH; ?>profile.php"><?php echo __('Profile'); ?></a></li>
-                        <li><a href="<?php echo ROOT_PATH; ?>tickets.php"><?php echo sprintf(__('Tickets <b>(%d)</b>'), $thisclient->getNumTickets()); ?></a></li>
+			?>
                         <li><a href="<?php echo $signout_url; ?>"><?php echo __('Sign Out'); ?></a></li>
+			<li><a href="<?php echo ROOT_PATH; ?>tickets.php"><?php echo sprintf(__('Tickets <b>(%d)</b>'), $thisclient->getNumTickets()); ?></a></li>
+			<li><a href="<?php echo ROOT_PATH; ?>profile.php"><?php echo __('Profile'); ?></a></li>
+			<li><span><?php echo Format::htmlchars($thisclient->getName()); ?></span></li>
                         <?php
                     } elseif($nav) {
                         if ($thisclient && $thisclient->isValid() && $thisclient->isGuest()) { ?>
