@@ -53,40 +53,6 @@ $selected = ($info['lang'] == $l['code']) ? 'selected="selected"' : ''; ?>
     </tr>
 <?php }
       if ($acct->isPasswdResetEnabled()) { ?>
-<tr>
-    <td colspan="2">
-        <div><hr><h3><?php echo __('Access Credentials'); ?></h3></div>
-    </td>
-</tr>
-<?php if (!isset($_SESSION['_client']['reset-token'])) { ?>
-<tr>
-    <td width="180">
-        <?php echo __('Current Password'); ?>:
-    </td>
-    <td>
-        <input type="password" size="18" name="cpasswd" value="<?php echo $info['cpasswd']; ?>">
-        &nbsp;<span class="error">&nbsp;<?php echo $errors['cpasswd']; ?></span>
-    </td>
-</tr>
-<?php } ?>
-<tr>
-    <td width="180">
-        <?php echo __('New Password'); ?>:
-    </td>
-    <td>
-        <input type="password" size="18" name="passwd1" value="<?php echo $info['passwd1']; ?>">
-        &nbsp;<span class="error">&nbsp;<?php echo $errors['passwd1']; ?></span>
-    </td>
-</tr>
-<tr>
-    <td width="180">
-        <?php echo __('Confirm New Password'); ?>:
-    </td>
-    <td>
-        <input type="password" size="18" name="passwd2" value="<?php echo $info['passwd2']; ?>">
-        &nbsp;<span class="error">&nbsp;<?php echo $errors['passwd2']; ?></span>
-    </td>
-</tr>
 <?php } ?>
 <?php } ?>
 </table>
